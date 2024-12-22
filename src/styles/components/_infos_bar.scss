@@ -1,0 +1,48 @@
+@use '../variables';
+
+.infos-bar {
+    padding: 20px 30px;
+    background-color: variables.$blue1; // Ajustando para o tema do projeto
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    &__infos {
+        display: flex;
+        flex-wrap: wrap; // Permitir que itens quebrem em várias linhas em telas menores
+        gap: 32px;
+
+        &__item {
+            font-size: 16px;
+            color: variables.$textColor;
+            line-height: 1.5;
+
+            b {
+                color: variables.$yellow; // Destaque com uma das cores do projeto
+                font-size: 20px;
+                display: block;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        flex-direction: column; // Empilha os elementos em telas pequenas
+        align-items: flex-start;
+
+        &__infos {
+            gap: 20px;
+
+            &__item {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 24px;
+        }
+    }
+}

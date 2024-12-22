@@ -1,0 +1,49 @@
+@use '../variables';
+
+.button {
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05); // Leve zoom ao passar o mouse
+        opacity: 0.9;
+    }
+
+    &--primary {
+        color: variables.$textColor;
+        background-color: variables.$blue2;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            background-color: variables.$blue1;
+        }
+    }
+
+    &--secondary {
+        color: variables.$blue1;
+        background-color: variables.$textColor;
+        border: 2px solid variables.$blue1;
+
+        &:hover {
+            background-color: variables.$blue2;
+            color: variables.$textColor;
+        }
+    }
+
+    @media (max-width: 640px) {
+        width: 100%; // Botões ocupam a largura total em telas menores
+        padding: 12px 20px;
+    }
+
+    @media (max-width: 1024px) {
+        width: auto; // Volta ao tamanho natural em telas médias
+        padding: 12px 24px;
+    }
+}

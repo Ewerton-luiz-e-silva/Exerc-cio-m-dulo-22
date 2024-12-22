@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa de Aniversário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/logo.png" alt="Logo da Festa">
+            <p class="hero__text">
+                Venha comemorar meu aniversário em grande estilo! A festa começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar fundo">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item" >
+                        <b>Localização</b>
+                        Espaço de Festas Energia - Centro - Cidade dos Sonhos
+                    </li>
+                    <li class="infos-bar__infos__item" >
+                        <b>Dress Code</b>
+                        Traje: Casual Chique
+                    </li>
+                    <li class="infos-bar__infos__item" >
+                        <b>Data e Horário</b>
+                        05/07/2025 às 19h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirmar Presença
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Música e Dança</h2>
+                <p class="event__details__description">Prepare-se para uma noite animada com música ao vivo e DJ para embalar a pista de dança. Venha com energia para dançar muito!</p>
+            </div>
+            <img class="event__image" src="./images/Música e Dança.png" alt="Música e Dança">
+        </div>
+    </section>
+
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Buffet Delicioso</h2>
+                <p class="event__details__description">Saboreie uma seleção especial de pratos e bebidas preparados para tornar a noite ainda mais inesquecível.</p>
+            </div>
+            <img class="event__image" src="./images/Buffet Delicioso.png" alt="Buffet Delicioso">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Espaço para Fotos</h2>
+                <p class="event__details__description">Capture os melhores momentos da festa com um espaço decorado para fotos. Não esqueça de postar com a hashtag #AniversárioDosSonhos.</p>
+            </div>
+            <img class="event__image" src="./images/Espaço para Fotos.png" alt="Espaço para Fotos">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Brindes Especiais</h2>
+                <p class="event__details__description">Participe de sorteios e receba lembranças exclusivas para guardar este dia especial na memória.</p>
+            </div>
+            <img class="event__image" src="./images/Brindes Especiais.png" alt="Brindes Especiais">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
